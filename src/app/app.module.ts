@@ -16,6 +16,7 @@ import { HeroeItemComponent } from './heroes/heroes-list/heroe-item/heroe-item.c
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { UppercaseDirective } from './shared/uppercase.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     HeroesDetailComponent,
     HeroeItemComponent,
     DropdownDirective,
+    UppercaseDirective,
     FilterPipe
   ],
   imports: [
@@ -40,6 +42,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
   ],
   exports: [
     DropdownDirective,
+    UppercaseDirective,
     FilterPipe
   ],
   providers: [],
