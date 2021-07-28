@@ -15,6 +15,7 @@ import { HeroesDetailComponent } from './heroes/heroes-detail/heroes-detail.comp
 import { HeroeItemComponent } from './heroes/heroes-list/heroe-item/heroe-item.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeroesEditComponent,
     HeroesDetailComponent,
     HeroeItemComponent,
+    DropdownDirective,
     FilterPipe
   ],
   imports: [
@@ -37,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule
   ],
   exports: [
+    DropdownDirective,
     FilterPipe
   ],
   providers: [],
