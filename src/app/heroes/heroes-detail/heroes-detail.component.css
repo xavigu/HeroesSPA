@@ -1,3 +1,7 @@
 .img-detail{
   max-height: 300px
 }
+
+.mat-spinner{
+  margin: 0 auto;
+}
