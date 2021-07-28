@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Spiderman",
+    "description": "Tambien conocido como el Hombre Araña, es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy",
+    "imagePath": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Spiderman.JPG/1280px-Spiderman.JPG"
+  },
+  {
+    "name": "Thor",
+    "description": "Thor (Thor Odinson) es un superhéroe ficticio que se basa en la deidad nórdica homónima, es el dios del trueno asgardiano poseedor del martillo encantado",
+    "imagePath": "https://www.enter.co/wp-content/uploads/2015/04/thor-768x432.jpg"
+  },
+  {
+    "name": "Hulk",
+    "description": "Un ser humanoide enorme de piel verde, corpulento y musculoso que posee una gran fortaleza física",
+    "imagePath": "https://dam.smashmexico.com.mx/wp-content/uploads/2018/11/hulkbio_portada.jpg"
+  },
+  {
+    "name": "Capitan America",
+    "description": "El Capitán América fue diseñado como un supersoldado patriota que luchaba frecuentemente contra las potencias del Eje en la Segunda Guerra Mundial",
+    "imagePath": "https://p4.wallpaperbetter.com/wallpaper/833/166/567/hero-comics-artwork-captain-america-wallpaper-preview.jpg"
+  },
+  {
+    "name": "Ironman",
+    "description": "Tambien conocido como Tony Stark, un multimillonario magnate empresarial estadounidense, desarrolla su traje, agregando armas y otros dispositivos tecnológicos que diseñó a través de su compañía",
+    "imagePath": "https://i.blogs.es/dcb4be/ironman0/450_1000.jpeg"
+  }
+]

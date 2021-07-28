@@ -12,6 +12,9 @@ import { HeroesStartComponent } from './heroes/heroes-start/heroes-start.compone
 import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
 import { HeroesEditComponent } from './heroes/heroes-edit/heroes-edit.component';
 import { HeroesDetailComponent } from './heroes/heroes-detail/heroes-detail.component';
+import { HeroeItemComponent } from './heroes/heroes-list/heroe-item/heroe-item.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,20 @@ import { HeroesDetailComponent } from './heroes/heroes-detail/heroes-detail.comp
     HeroesStartComponent,
     HeroesListComponent,
     HeroesEditComponent,
-    HeroesDetailComponent
+    HeroesDetailComponent,
+    HeroeItemComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
     MaterialModule,
     AppRoutingModule
+  ],
+  exports: [
+    FilterPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

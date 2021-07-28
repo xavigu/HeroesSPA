@@ -1,1 +1,18 @@
-<p>heroes-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewHeroe()">Nuevo Heroe</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <input class="form-control" type='search' placeholder="Buscar Heroe..." [(ngModel)] = heroeName>
+  </div>
+  <div class="col-xs-12">
+    <app-heroe-item
+      *ngFor="let heroe of heroes | FilterPipe: heroeName; let i = index"
+      [heroe]="heroe"
+      [index]="i"></app-heroe-item>
+  </div>
+</div>
+
