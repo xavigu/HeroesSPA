@@ -1,1 +1,62 @@
-<p>heroes-edit works!</p>
+<div class="row">
+  <div class="col-xs-12">
+      <form [formGroup] = "groupForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+              <div class="col-xs-12">
+                  <button 
+                      type="submit"
+                      class="btn btn-success main"
+                      [disabled]="!groupForm.valid">Guardar</button>
+                  <button 
+                      (click)="goBack()"
+                      type="button" 
+                      class="btn btn-danger main">Cancelar</button>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                  <div class="form-group">
+                      <label for="name">Nombre</label>
+                       <input 
+                          formControlName="name"
+                          class="form-control" 
+                          type="text"
+                          id="name">
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                  <div class="form-group">
+                      <label for="imagePath">URL de imagen</label>
+                      <input
+                          formControlName="imagePath"
+                          class="form-control" 
+                          type="text"
+                          id="imagePath"
+                          #imagePath>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                  <img [src]="imagePath.value" class="img-responsive">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12">
+                  <div class="form-group">
+                      <label for="description">Descripcion</label>
+                      <textarea
+                          formControlName="description"
+                          class="form-control" 
+                          type="text"
+                          id="description"
+                          rows="6"></textarea>
+                  </div>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
