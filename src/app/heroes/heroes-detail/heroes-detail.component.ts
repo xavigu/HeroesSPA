@@ -11,6 +11,7 @@ import { HeroesService } from '../heroes.service';
 export class HeroesDetailComponent implements OnInit {
   heroe: Heroe;
   id: number;
+  loading: boolean = false;
 
   constructor(private heroeService: HeroesService,
     private route: ActivatedRoute,
@@ -27,12 +28,20 @@ export class HeroesDetailComponent implements OnInit {
   }
 
   onEditHeroe() {
-    this.router.navigate(['edit'], {relativeTo: this.route});
+    this.loading = true;
+    setTimeout(() => {
+      this.loading = false;
+      this.router.navigate(['edit'], {relativeTo: this.route});
+    }, 1000);
   }
 
   onDeleteHeroe() {
-    this.heroeService.deleteHeroe(this.id)
-    this.router.navigate(['/heroes'], { relativeTo: this.route })
+    this.loading = true;
+    setTimeout(() => {
+      this.loading = false
+      this.heroeService.deleteHeroe(this.id)
+      this.router.navigate(['/heroes'], { relativeTo: this.route })
+    }, 1000);
   }
 
 }

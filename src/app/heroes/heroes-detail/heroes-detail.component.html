@@ -1,34 +1,38 @@
-<div class="row">
-  <div class="col-xs-12">
-    <img
-      [src]="heroe.imagePath"
-      alt="{{ heroe.name }}"
-      class="img-responsive img-detail">
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <h1>{{ heroe.name }}</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <div class="btn-group" appDropdown>
-      <button
-        type="button"
-        class="btn btn-primary dropdown-toggle">
-        Administrar Heroe <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a style="cursor: pointer;" (click)="onEditHeroe()">Editar Heroe</a></li>
-        <li><a style="cursor: pointer;" (click)="onDeleteHeroe()">Eliminar Heroe</a></li>
-      </ul>
+<ng-container *ngIf="!loading">
+  <div class="row">
+    <div class="col-xs-12">
+      <img
+        [src]="heroe.imagePath"
+        alt="{{ heroe.name }}"
+        class="img-responsive img-detail">
     </div>
   </div>
-</div>
-<br>
-<div class="row">
-  <div class="col-xs-12">
-    {{ heroe.description }}
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ heroe.name }}</h1>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group" appDropdown>
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle">
+          Administrar Heroe <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a style="cursor: pointer;" (click)="onEditHeroe()">Editar Heroe</a></li>
+          <li><a style="cursor: pointer;" (click)="onDeleteHeroe()">Eliminar Heroe</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      {{ heroe.description }}
+    </div>
+  </div>
+</ng-container>
+
+<mat-spinner *ngIf="loading"></mat-spinner>
