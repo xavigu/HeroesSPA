@@ -17,6 +17,7 @@ import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { UppercaseDirective } from './shared/uppercase.directive';
+import { DialogPopupComponent } from './shared/dialog-popup/dialog-popup.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UppercaseDirective } from './shared/uppercase.directive';
     HeroeItemComponent,
     DropdownDirective,
     UppercaseDirective,
-    FilterPipe
+    FilterPipe,
+    DialogPopupComponent
   ],
   imports: [
     BrowserModule,
