@@ -22,7 +22,8 @@ import { UppercaseDirective } from "./uppercase.directive";
     DropdownDirective,
     FilterPipe,
     UppercaseDirective,
-    CommonModule
+    CommonModule,
+    MaterialModule
   ]
 })
 

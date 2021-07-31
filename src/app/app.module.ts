@@ -16,13 +16,13 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
+    AppRoutingModule,
+    SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    AppRoutingModule,
-    HeroesModule,
-    SharedModule
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

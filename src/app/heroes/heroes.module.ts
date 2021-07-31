@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { RecipesRoutingModule } from './heroes-routing.module';
+import { HeroesRoutingModule } from './heroes-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { HeroesComponent } from './heroes.component';
@@ -22,11 +22,11 @@ import { HeroeItemComponent } from './heroes-list/heroe-item/heroe-item.componen
     HeroeItemComponent
   ],
   imports: [ 
+    SharedModule,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
-    RecipesRoutingModule,
-    SharedModule
+    HeroesRoutingModule
    ],
   providers: []
 })
