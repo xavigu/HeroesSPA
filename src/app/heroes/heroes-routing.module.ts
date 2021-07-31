@@ -7,7 +7,7 @@ import { HeroesComponent } from "./heroes.component";
 
 const routes: Routes = [
   {
-    path: 'heroes',
+    path: '',
     component: HeroesComponent,
     children: [
       { path: '', component: HeroesStartComponent },
